@@ -1,0 +1,64 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    background-color: lightsalmon;
+    color: darkmagenta;
+}
+
+.mobile {
+    background-color: darkmagenta;
+    color: lightsalmon
+}
+.tablet {
+    background-color: blanchedalmond;
+    color: darkolivegreen;
+    display: none;    
+}
+.desktop {
+    background-color: darkgoldenrod;
+    color: lemonchiffon;
+    display: none;
+}
+
+/*Mobile First*/
+p,
+h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*Tablet näkymän säännöt*/
+@media only screen and (min-width: 426px) {
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+    body {
+        color: blanchedalmond;
+        background-color: darkolivegreen;
+    }
+}
+
+/*Desktop näkymän säännöt */
+@media only screen and (min-width: 769px) {
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+    body {
+        color: darkgoldenrod;
+        background-color: lemonchiffon;
+    }
+}
